@@ -1,0 +1,25 @@
+# cf.optikosprime.com
+
+# Develop Requirements
+# POSIX Shell & Utilities
+# Git
+# Nix
+git clone git@github.com:optikosprime/cf.optikosprime.com ~/github.com/optikosprime/cf.optikosprime.com
+
+# Develop
+make clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/docs/
+make clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/
+
+# Stage Requirements
+# Develop Requirements
+
+# Stage
+make STAGE=1 -C ~/github.com/optikosprime/cf.optikosprime.com/docs/
+xdg-open https://localhost:8080
+
+# Use Requirements
+# Any Web Browser
+
+# Use
+xdg-open https://cf.optikosprime.com
+
