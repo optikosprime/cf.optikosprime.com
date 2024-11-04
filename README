@@ -1,25 +1,35 @@
 # cf.optikosprime.com
 
-# Develop Requirements
+# Use Requirements
 # POSIX Shell & Utilities
 # Git
 # Nix
 git clone git@github.com:optikosprime/cf.optikosprime.com ~/github.com/optikosprime/cf.optikosprime.com
 
-# Develop
-make clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/docs/
-make clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/
-
-# Stage Requirements
-# Develop Requirements
-
-# Stage
-make STAGE=1 -C ~/github.com/optikosprime/cf.optikosprime.com/docs/
+# Use
+make -C ~/github.com/optikosprime/cf.optikosprime.com/docs/
 xdg-open https://localhost:8080
 
+# Debug Requirements
 # Use Requirements
+
+# Debug
+make DEBUG=1 clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/docs/
+make DEBUG=1 clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/
+
+# Deploy Requirements
+# Buy optikosprime.com domain from DNS provider
+# Through the DNS provider create a CNAME record that points cf to optikosprime.github.io
+xdg-open https://github.com/optikosprime/cf.optikosprime.com/settings/pages
+# Choose the /docs in the main branch in 'Build and deployment'
+# Add cf.optikosprime.com in 'Custom domain'
+
+# Deploy
+# Automatically done in every git push.
+
+# Use Deployed Requirements
 # Any Web Browser
 
-# Use
+# Use Deployed
 xdg-open https://cf.optikosprime.com
 
