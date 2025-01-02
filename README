@@ -1,18 +1,10 @@
 # cf.optikosprime.com
 
-# Use Requirements
-# Git
-# Nix
-git clone git@github.com:optikosprime/cf.optikosprime.com ~/github.com/optikosprime/cf.optikosprime.com
+# Run Deployed Requirements
+# Any Web Browser
 
-# Use
-cd ~/github.com/optikosprime/cf.optikosprime.com/ && nix develop .#docs --command http-server & xdg-open http://localhost:8080 && cd -
-
-# Debug Requirements
-# Use Requirements
-
-# Debug
-nix run ~/github.com/optikosprime/cf.optikosprime.com#build-all
+# Run Deployed
+xdg-open https://cf.optikosprime.com
 
 # Deploy Requirements
 # Buy optikosprime.com domain from DNS provider
@@ -24,9 +16,11 @@ xdg-open https://github.com/optikosprime/cf.optikosprime.com/settings/pages
 # Deploy
 # Done automatically after each git push
 
-# Use Deployed Requirements
-# Any Web Browser
+# Run Locally Requirements
+# Git
+# Nix
+git clone git@github.com:optikosprime/cf.optikosprime.com ~/github.com/optikosprime/cf.optikosprime.com
 
-# Use Deployed
-xdg-open https://cf.optikosprime.com
+# Run Locally
+bash ~/github.com/optikosprime/cf.optikosprime.com/packages/docs/run.sh
 
