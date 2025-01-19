@@ -23,11 +23,11 @@ xdg-open https://github.com/optikosprime/cf.optikosprime.com/settings/pages
 git clone git@github.com:optikosprime/cf.optikosprime.com ~/github.com/optikosprime/cf.optikosprime.com
 
 # Run Locally
-make -C ~/github.com/optikosprime/cf.optikosprime.com/packages/docs/
+make -C ~/github.com/optikosprime/cf.optikosprime.com/shells/docs/
 
 # Run Debug Locally Requirements
 # Run Locally Requirements
 
 # Run Debug Locally
-DEBUG=1 make clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/packages/docs/
+DEBUG=1 make clean check all -C ~/github.com/optikosprime/cf.optikosprime.com/shells/docs/
 
